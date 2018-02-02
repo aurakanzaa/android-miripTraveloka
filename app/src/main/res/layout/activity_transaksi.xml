@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ruwet.miriptraveloka2.activity.transaksi">
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/idroomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="Id Ruangan" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/idroom"
+        android:hint="id room"
+        android:ems="10"
+        android:textSize="20dp"
+        android:layout_below="@+id/idroomText"/>
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idroomText"
+        android:layout_below="@+id/idroom"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="Booking Date" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/date"
+        android:hint="booking date"
+        android:ems="10"
+        android:layout_below="@+id/dateText"/>
+
+    <TextView
+        android:id="@+id/waktuinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/date"
+        android:textStyle="bold"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="20dp"
+        android:text="Checkin " />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/date2"
+        android:hint="Tanggal Checkin"
+        android:ems="10"
+        android:layout_below="@+id/waktuinText"/>
+
+    <TextView
+        android:id="@+id/waktuText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/date"
+        android:layout_below="@+id/date2"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="Checkout " />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/date3"
+        android:hint="Tanggal Chekout"
+        android:ems="10"
+        android:layout_below="@+id/waktuText"/>
+
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="simpan"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white" />
+</RelativeLayout>

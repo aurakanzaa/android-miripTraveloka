@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40px"
+    android:layout_marginRight="30px"
+    android:layout_marginLeft="30px"
+    android:layout_marginBottom="30px"
+    tools:context="com.example.ruwet.miriptraveloka2.activity.EditProfile">
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="41dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/emailText"
+        android:layout_marginEnd="33dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/namaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emailText"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="21dp"
+        android:text="Nama" />
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/email"
+        android:layout_alignTop="@+id/namaText"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/teleponText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emailText"
+        android:layout_below="@+id/nama"
+        android:layout_marginTop="21dp"
+        android:text="Telepon" />
+
+    <EditText
+        android:id="@+id/telepon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nama"
+        android:layout_alignTop="@+id/teleponText"
+        android:ems="10"
+        android:inputType="text" />
+
+
+
+    <Button
+        android:id="@+id/btnprofil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="save"
+        android:textColor="@color/white" />
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.example.ruwet.miriptraveloka2.activity.lihatRuangan">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kendaraan"
+                android:id="@+id/workshop"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:text="Plat Nomor"
+                android:id="@+id/platNomor"
+                android:layout_below="@+id/workshop"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/platNomorTxt"
+                android:layout_below="@+id/platNomor"
+                android:layout_alignLeft="@+id/platNomor"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:id="@+id/nama"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/platNomorTxt"
+                android:layout_alignLeft="@+id/platNomor"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/namaTxt"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/nama"
+                android:layout_alignLeft="@+id/platNomor"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brand"
+                android:id="@+id/brand"
+                android:layout_below="@+id/namaTxt"
+                android:layout_alignLeft="@+id/platNomor"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/brandTxt"
+                android:layout_below="@+id/brand"
+                android:layout_alignLeft="@+id/platNomor"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipe"
+                android:id="@+id/tipe"
+                android:layout_below="@+id/brandTxt"
+                android:layout_alignLeft="@+id/platNomor"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/tipeTxt"
+                android:textStyle="bold"
+                android:layout_below="@+id/tipe"
+                android:layout_alignLeft="@+id/platNomor"
+                android:layout_marginBottom="10dp"
+
+                />
+            <Button
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tipeTxt"
+                android:layout_centerHorizontal="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/button2"
+                android:text="kembali"
+                android:textSize="10dp"
+/>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.ruwet.miriptraveloka2.activity.NotificationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="30px"
+        android:layout_weight="2"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/foto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="70dp"
+            android:background="@color/white"
+            android:onClick="takeImageFromCamera"
+            android:src="@drawable/gi" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/foto"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="29dp"
+            android:layout_toEndOf="@+id/foto"
+            android:text="nama"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/em"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nama"
+            android:layout_below="@+id/nama"
+            android:layout_marginTop="20dp"
+            android:text="email"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+
+        <Button
+            android:id="@+id/btnedit"
+            android:layout_width="400px"
+            android:layout_height="80px"
+            android:layout_below="@+id/foto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:background="@color/colorPrimary"
+            android:text="Edit profile"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnlogout"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="62dp"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:background="@color/colorPrimaryDark"
+            android:text="logout"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
